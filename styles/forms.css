@@ -1,0 +1,31 @@
+form h1 {
+    margin: 5px 0;
+    font-size: 1.6rem;
+    text-align: center;
+    color: rgb(210, 0, 90);
+}
+
+form label {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+form input[type="date"] {
+    font-family: "Nunito", sans-serif;
+}
+
+.form-action, button, input[type="button"] {
+    background-color: #fdffb9;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #434343;
+    border-radius: 10px;
+    border: 2px solid #cdcf93;
+    margin-top: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.9rem;
+}
+
+.form-action:hover, button:hover, input[type="button"]:hover {
+    background-color: #f4ff62;
+}

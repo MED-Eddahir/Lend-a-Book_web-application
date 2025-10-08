@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lend-A-Book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="styles/style.css">
+    <link rel="stylesheet"
+          href="styles/lend.css">
+</head>
+<body>
+<header>
+    <div class="logo"><img src="images/lend-borrow.png"
+                           alt="logo"></div>
+    <nav class="user-nav">
+        <div class="nav-item">Claudia</div>
+        <div class="nav-item">Esci</div>
+    </nav>
+</header>
+<section class="main">
+    <div class="left-col">
+        <nav class="content-nav">
+            <div class="nav-item level-1">Negozio</div>
+            <a href="libreria.html">
+                <div class="nav-item level-1 dropdown">
+                    <span class="dropdown-text">Libreria</span>
+                    <span class="dropdown-label">
+                        <img alt="dropdown"
+                             src="images/down-arrow.png">
+                    </span>
+                </div>
+            </a>
+            <div class="nav-item level-1 active">
+                Lend
+            </div>
+            <div class="nav-item level-1">
+                Borrow
+            </div>
+            <a href="amici.html">
+                <div class="nav-item level-1">
+                    Amici
+                </div>
+            </a>
+        </nav>
+    </div>
+    <div class="center-area">
+        <div class="lend">
+            <div class="lend-section requests">
+                <h1>Richieste ricevute</h1>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Richiedente</th>
+                        <th>Titolo</th>
+                        <th>Durata</th>
+                        <th>Azione</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="lend-source">Paola</td>
+                        <td class="lend-book">The Eye of the World: Book One of The Wheel of Time</td>
+                        <td class="lend-span">2 mesi</td>
+                        <td class="lend-action">
+                            <span class="lend-yes">Ok</span><span class="lend-no">No</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lend-source">Andrea</td>
+                        <td class="lend-book">Yumi and the Nightmare Painter: A Cosmere Novel</td>
+                        <td class="lend-span">2 mesi</td>
+                        <td class="lend-action">
+                            <span class="lend-yes">Ok</span><span class="lend-no">No</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lend-source">Ellen</td>
+                        <td class="lend-book">Yumi and the Nightmare Painter: A Cosmere Novel</td>
+                        <td class="lend-span">2 mesi</td>
+                        <td class="lend-action">
+                            <span class="lend-yes">Ok</span><span class="lend-no">No</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lend-source">Giorgio</td>
+                        <td class="lend-book">Yumi and the Nightmare Painter: A Cosmere Novel</td>
+                        <td class="lend-span">4 mesi</td>
+                        <td class="lend-action">
+                            <span class="lend-yes">Ok</span><span class="lend-no">No</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="lend-section loans">
+                <h1>Prestiti in corso</h1>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Prestato a</th>
+                        <th>Titolo</th>
+                        <th>Scadenza</th>
+                        <th>Proroga</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="loan-source">Paola</td>
+                        <td class="loan-book">Emily Wilde's Encyclopaedia of Faeries</td>
+                        <td class="loan-due">5/10/24</td>
+                        <td class="loan-extend lend-action">
+                            <span>Request</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="loan-source">Antonio</td>
+                        <td class="loan-book">Sabbia nera</td>
+                        <td class="loan-due">19/10/24</td>
+                        <td class="loan-extend">
+                            1 mese
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p class="copy">
+        <span class="highlight">Lend-A-Book</span> è un progetto no profit realizzato per il corso di Tecnologie Web,
+        CdL in Informatica,
+        Università di Torino.
+    </p>
+    <p class="license">&copy; 2024-2025 Claudia Picardi.<a
+            href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"><img alt="creative commons license"
+                                                                                  class="cclicense"
+                                                                                  src="images/by-nc-sa.png"></a></p>
+    <p class="credits"><a href="https://www.flaticon.com/free-icons/down-arrow"
+                          title="down arrow icons">Down arrow icons created by Roundicons - Flaticon</a></p>
+</footer>
+</body>
+</html>

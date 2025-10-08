@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lend-A-Book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="styles/style.css">
+    <link rel="stylesheet"
+          href="styles/libreria.css">
+    <link rel="stylesheet"
+          href="styles/forms.css">
+</head>
+<body>
+<header>
+    <div class="logo"><img src="images/lend-borrow.png"
+                           alt="logo"></div>
+    <nav class="user-nav">
+        <div class="nav-item">Claudia</div>
+        <div class="nav-item">Esci</div>
+    </nav>
+</header>
+<section class="main">
+    <div class="left-col">
+        <nav class="content-nav">
+            <div class="nav-item level-1">Negozio</div>
+            <a href="libreria.html">
+                <div class="nav-item level-1 dropdown active">
+                    <span class="dropdown-text">Libreria</span>
+                    <span class="dropdown-label expanded">
+                        <img alt="dropdown"
+                             src="images/down-arrow.png">
+                    </span>
+                </div>
+            </a>
+            <div class="nav-item level-2 active">Tutti</div>
+            <div class="nav-item level-2">Wheel of Time - serie</div>
+            <div class="nav-item level-2">Letture estate 2024</div>
+            <a href="lend.html">
+                <div class="nav-item level-1">
+                    Lend
+                </div>
+            </a>
+            <div class="nav-item level-1">
+                Borrow
+            </div>
+            <a href="amici.html">
+                <div class="nav-item level-1">
+                    Amici
+                </div>
+            </a>
+        </nav>
+    </div>
+    <div class="center-area">
+        <div class="libreria">
+            <div class="libreria-header">
+                <form class="status-filter">
+                    <div class="status-filter-title">
+                        Filtra:
+                    </div>
+                    <div class="status-filter-item">
+                        <input type="radio"
+                               name="status-filter-radio"
+                               value="lent"
+                               id="lent"><label for="lent">Prestati</label>
+                    </div>
+                    <div class="status-filter-item">
+                        <input type="radio"
+                               name="status-filter-radio"
+                               value="borrowed"
+                               id="borrowed"><label for="borrowed">Ricevuti in prestito</label>
+                    </div>
+
+                    <div class="status-filter-item">
+                        <input type="radio"
+                               name="status-filter-radio"
+                               value="own"
+                               id="own"><label for="own">Miei</label>
+                    </div>
+                    <div class="status-filter-item">
+                        <input type="radio"
+                               name="status-filter-radio"
+                               value="all"
+                               id="all"
+                               checked><label for="all">Tutti</label>
+                    </div>
+                </form>
+                <button>Crea raccolta</button>
+            </div>
+            <div class="book-collection">
+                <div class="book-item own"
+                     data-bookid="5">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/05.png">
+                    <div class="book-info">
+                        <p class="book-title">The Dragon Reborn: Book Three of The Wheel of Time</p>
+                        <p class="book-author">Robert Jordan</p>
+                    </div>
+
+                    <div class="book-status"><span class="status">A</span></div>
+                </div>
+                <div class="book-item own lent"
+                     data-bookid="9">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/09.png">
+                    <div class="book-info">
+                        <p class="book-title">Emily Wilde's Encyclopaedia of Faeries</p>
+                        <p class="book-author">Heather Fawcett</p>
+                    </div>
+
+                    <div class="book-status"><span class="status">L</span><span class="due">5/10/24</span></div>
+                </div>
+                <div class="book-item own"
+                     data-bookid="7">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/07.png">
+                    <div class="book-info">
+                        <p class="book-title">The Eye of the World: Book One of The Wheel of Time</p>
+                        <p class="book-author">Robert Jordan</p>
+                    </div>
+                    <div class="book-status"><span class="status">A</span><span class="requests">1</span></div>
+                </div>
+                <div class="book-item own"
+                     data-bookid="1">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/01.png">
+                    <div class="book-info">
+                        <p class="book-title">Gödel, Escher, Bach. Un'eterna ghirlanda brillante.</p>
+                        <p class="book-author">Douglas Hofstadter</p>
+                    </div>
+
+                    <div class="book-status"><span class="status">A</span></div>
+                </div>
+                <div class="book-item own"
+                     data-bookid="6">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/06.png">
+                    <div class="book-info">
+                        <p class="book-title">The Great Hunt: Book Two of The Wheel of Time</p>
+                        <p class="book-author">Robert Jordan</p>
+                    </div>
+                    <div class="book-status"><span class="status">A</span></div>
+                </div>
+                <div class="book-item borrowed"
+                     data-bookid="2">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/02.png">
+                    <div class="book-info">
+                        <p class="book-title">L'ottava vita (per Brilka)</p>
+                        <p class="book-author">Nino Haratischwili</p>
+                    </div>
+                    <div class="book-status"><span class="status">B</span><span class="due">12/11/24</span></div>
+                </div>
+                <div class="book-item borrowed"
+                     data-bookid="8">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/08.png">
+                    <div class="book-info">
+                        <p class="book-title">Pedagogia degli oppressi</p>
+                        <p class="book-author">Paulo Freire</p>
+                    </div>
+                    <div class="book-status"><span class="status">B</span><span class="due">5/12/24</span></div>
+                </div>
+                <div class="book-item own lent"
+                     data-bookid="3">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/03.png">
+                    <div class="book-info">
+                        <p class="book-title">Sabbia nera</p>
+                        <p class="book-author">Cristina Cassar Scalia</p>
+                    </div>
+                    <div class="book-status"><span class="status">L</span><span class="due">19/10/24</span></div>
+                </div>
+                <div class="book-item own"
+                     data-bookid="4">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/04.png">
+                    <div class="book-info">
+                        <p class="book-title">Yumi and the Nightmare Painter: A Cosmere Novel</p>
+                        <p class="book-author">Brandon Sanderson</p>
+                    </div>
+                    <div class="book-status"><span class="status">A</span><span class="requests">3</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p class="copy">
+        <span class="highlight">Lend-A-Book</span> è un progetto no profit realizzato per il corso di Tecnologie Web,
+        CdL in Informatica,
+        Università di Torino.
+    </p>
+    <p class="license">&copy; 2024-2025 Claudia Picardi.<a
+            href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"><img alt="creative commons license"
+                                                                                  class="cclicense"
+                                                                                  src="images/by-nc-sa.png"></a></p>
+    <p class="credits"><a href="https://www.flaticon.com/free-icons/down-arrow"
+                          title="down arrow icons">Down arrow icons created by Roundicons - Flaticon</a></p>
+</footer>
+</body>
+</html>

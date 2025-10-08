@@ -1,0 +1,41 @@
+form.book-borrow-request {
+    border: 1px solid rgb(104, 185, 185);
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 20px 30px 10px 30px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.book-borrow-request .book-info {
+    text-align: center;
+
+}
+
+.book-borrow-request .book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-borrow-request .message {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-borrow-request .message textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.book-borrow-request .actions {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    justify-content: center;
+    column-gap: 10px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lend-A-Book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="styles/style.css">
+    <link rel="stylesheet"
+          href="styles/libreria.css">
+    <link rel="stylesheet"
+          href="styles/forms.css">
+    <link rel="stylesheet"
+          href="styles/borrow-request.css">
+</head>
+<body>
+<header>
+    <div class="logo"><img src="images/lend-borrow.png"
+                           alt="logo"></div>
+    <nav class="user-nav">
+        <div class="nav-item">Claudia</div>
+        <div class="nav-item">Esci</div>
+    </nav>
+</header>
+<section class="main">
+    <div class="left-col">
+        <nav class="content-nav">
+            <div class="nav-item level-1">Negozio</div>
+            <a href="libreria.html">
+                <div class="nav-item level-1 dropdown">
+                    <span class="dropdown-text">Libreria</span>
+                    <span class="dropdown-label">
+                        <img alt="dropdown"
+                             src="images/down-arrow.png">
+                    </span>
+                </div>
+            </a>
+            <a href="lend.html">
+                <div class="nav-item level-1">
+                    Lend
+                </div>
+            </a>
+            <div class="nav-item level-1 active">
+                Borrow
+            </div>
+            <a href="amici.html">
+                <div class="nav-item level-1">
+                    Amici
+                </div>
+            </a>
+        </nav>
+    </div>
+    <div class="center-area">
+        <div>
+            <form class="book-borrow-request"
+                  data-bookid="13">
+                <h1>Stai richiedendo:</h1>
+                <div class="book-item">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/13.png">
+                    <div class="book-info">
+                        <p class="book-title">La cura Schopenhauer</p>
+                        <p class="book-author">Irvin Yalom</p>
+                    </div>
+                </div>
+                <div class="deadline">
+                    <label for="scadenza">Fino a:</label>
+                    <input type="date"
+                           id="scadenza">
+                </div>
+                <div class="message">
+                    <label for="message">Aggiungi una nota:</label>
+                    <textarea id="message" name="message" cols="40" rows="5"></textarea>
+                </div>
+                <div class="actions">
+                    <div class="form-action">Chiedi</div><div class="form-action">Annulla</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <p class="copy">
+        <span class="highlight">Lend-A-Book</span> è un progetto no profit realizzato per il corso di Tecnologie Web,
+        CdL in Informatica,
+        Università di Torino.
+    </p>
+    <p class="license">&copy; 2024-2025 Claudia Picardi.<a
+            href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"><img alt="creative commons license"
+                                                                                  class="cclicense"
+                                                                                  src="images/by-nc-sa.png"></a></p>
+    <p class="credits"><a href="https://www.flaticon.com/free-icons/down-arrow"
+                          title="down arrow icons">Down arrow icons created by Roundicons - Flaticon</a></p>
+</footer>
+</body>
+</html>

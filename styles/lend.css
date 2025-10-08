@@ -1,0 +1,66 @@
+.lend {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.lend-section {
+    margin-bottom: 20px;
+}
+
+.lend-section h1 {
+    margin: 0;
+}
+
+.lend-section table {
+    width: 100%;
+    font-size: 0.9rem;
+    border-collapse: collapse;
+}
+
+.lend-section table td, th {
+    text-align: left;
+    border: 2px solid rgba(144, 197, 197, 0.64);
+    padding: 3px 5px;
+    color: rgba(0, 0, 0, 0.79);
+}
+
+.lend-section table th {
+    color: white;
+    background-color: rgba(34, 114, 114, 0.64);
+}
+
+.lend-section table tr:nth-child(even) {
+    background-color: rgba(214, 255, 245, 0.6);
+}
+
+.lend-section table tr:nth-child(odd) {
+    background-color: rgba(227, 255, 180, 0.42);
+}
+
+.lend-section table th:nth-child(1) {
+    width: 150px;
+}
+
+.lend-section table th:nth-child(3) {
+    width: 150px;
+}
+
+.lend-section table th:nth-child(4) {
+    width: 200px;
+}
+
+.lend-section table td.lend-action {
+    padding: 5px 0;
+}
+
+.lend-action span {
+    border: 1px solid rgb(104, 185, 185);
+    padding: 2px 5px;
+    margin: 0 2px;
+    border-radius: 5px;
+    background-color: #FdFFc1;
+}
+
+.lend-action span:hover {
+    background-color: #f4ff71;
+}
