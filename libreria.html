@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Lend-A-Book</title>
+     <script type="module" src="scripts/menu-dropdown.js"></script>
+     <script type="module" src="scripts/book-selection.js"></script>
+       <script type="module" src="scripts/crea-raccolta.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
           rel="stylesheet">
     <link rel="stylesheet"
@@ -25,18 +28,24 @@
     <div class="left-col">
         <nav class="content-nav">
             <div class="nav-item level-1">Negozio</div>
-            <a href="libreria.html">
+                <div class="submenu">
+                <div class="nav-item level-2 active">Novita</div>
+                <div class="nav-item level-2">Bookcrossing</div>
+                </div>
                 <div class="nav-item level-1 dropdown active">
+                    <a href="libreria.html">
                     <span class="dropdown-text">Libreria</span>
+                    </a>
                     <span class="dropdown-label expanded">
                         <img alt="dropdown"
                              src="images/down-arrow.png">
                     </span>
                 </div>
-            </a>
+            <div class="submenu">
             <div class="nav-item level-2 active">Tutti</div>
             <div class="nav-item level-2">Wheel of Time - serie</div>
             <div class="nav-item level-2">Letture estate 2024</div>
+            </div>
             <a href="lend.html">
                 <div class="nav-item level-1">
                     Lend
@@ -208,5 +217,14 @@
     <p class="credits"><a href="https://www.flaticon.com/free-icons/down-arrow"
                           title="down arrow icons">Down arrow icons created by Roundicons - Flaticon</a></p>
 </footer>
+      <div class="raccolta hide">
+        <form class="raccolta-forum">
+       <div><h2>Nuova raccolta<h2><div>
+            <div><input type="text" placeholder="Nome della raccolta"></div>
+        <div class="action">
+         <div class="form-action">Chiedi</div><div class="form-action">Annulla</div>
+            </div>
+            <form>
+      </div>
 </body>
 </html>

@@ -11,6 +11,11 @@
           href="styles/amici.css">
     <link rel="stylesheet"
           href="styles/libreria.css">
+    <link rel="stylesheet"
+          href="styles/forms.css">
+    <link rel="stylesheet"
+          href="styles/borrow-request.css">
+    <script type="module" src="scripts/chiedi.js"></script>
 </head>
 <body>
 <header>
@@ -72,7 +77,7 @@
                         <p class="book-title">La cura Schopenhauer</p>
                         <p class="book-author">Irvin Yalom</p>
                     </div>
-                    <div class="book-action"><span class="action"><a href="richiesta.html">Chiedi</a></span></div>
+                    <div class="book-action"><span class="action">Chiedi</span></div>
                 </div>
                 <div class="book-item own"
                      data-bookid="12">
@@ -124,5 +129,32 @@
     <p class="credits"><a href="https://www.flaticon.com/free-icons/down-arrow"
                           title="down arrow icons">Down arrow icons created by Roundicons - Flaticon</a></p>
 </footer>
+      <div class="glasspane hide">
+    <form class="book-borrow-request"
+                  data-bookid="13">
+                <h1>Stai richiedendo:</h1>
+                <div class="book-item">
+                    <img class="book-cover"
+                         alt="book cover"
+                         src="images/books/13.png">
+                    <div class="book-info">
+                        <p class="book-title">La cura Schopenhauer</p>
+                        <p class="book-author">Irvin Yalom</p>
+                    </div>
+                </div>
+                <div class="deadline">
+                    <label for="scadenza">Fino a:</label>
+                    <input type="date"
+                           id="scadenza">
+                </div>
+                <div class="message">
+                    <label for="message">Aggiungi una nota:</label>
+                    <textarea id="message" name="message" cols="40" rows="5"></textarea>
+                </div>
+                <div class="actions">
+                    <div class="form-action">Chiedi</div><div class="form-action">Annulla</div>
+                </div>
+            </form>
+            </div>
 </body>
 </html>

@@ -179,3 +179,50 @@
 .book-action .action:hover {
     background-color: rgb(14, 164, 164);
 }
+
+.selected{
+    border: 4px solid #f1006b !important;
+   background-color:yellow !important;
+}
+
+.action{
+    cursor: pointer;
+}
+
+.raccolta{
+    width:100vw;
+    height:100vh;
+    z-index:10;
+    position: absolute;
+    background-color:rgba(186,189,169,0.5);
+    top:0%;
+    left:0%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.raccolta-forum{
+    background-color: #cde8e8;
+    border: 3px solid rgb(104, 185, 185);
+    padding: 5px 150px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color:red;
+}
+
+.raccolta-forum .action{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    justify-content: center;
+    column-gap: 10px;
+}
+.raccolta-forum input{
+    width:250px;
+    height:30px;
+}
+
