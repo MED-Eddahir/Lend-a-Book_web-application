@@ -265,7 +265,7 @@ function findBookByIssue(issueId) {
     return undefined;
 }
 
-class Bookshelf {
+ export class Bookshelf {
     constructor(owner) {
         this.owner = owner;
         this.books = {}
@@ -314,9 +314,13 @@ class Bookshelf {
         return Object.values(this.books);
     }
 
+    getCollectionsOnShelf(){
+        return Object.entries(this.collections);
+    }
+
     returnBorrowed(issueId) {
     if (this.books[issueId] !== undefined && this.books[issueId].status === "borrowed") {
-        delete this.books[issueId];   // ✅ remove the borrowed copy
+        delete this.books[issueId];
         return true;
     }
     return false;
@@ -372,9 +376,9 @@ class Bookshelf {
 
 }
 
-const userBookshelves = {};
-userBookshelves["Claudia"] = new Bookshelf("Claudia");
+ export const userBookshelves = {};
 
+userBookshelves["Claudia"] = new Bookshelf("Claudia");
 userBookshelves["Claudia"].addOwnedBook("1-5");
 userBookshelves["Claudia"].addOwnedBook("1-9");
 userBookshelves["Claudia"].addOwnedBook("1-7");
@@ -387,6 +391,16 @@ userBookshelves["Claudia"].borrowBook("1-2", "12/11/24", "Ellen");
 userBookshelves["Claudia"].borrowBook("1-8", "5/12/24", "Giorgjo");
 userBookshelves["Claudia"].lendBook("1-9", "5/10/24", "Paola");
 userBookshelves["Claudia"].lendBook("1-3", "19/10/24", "Antonio");
+
+userBookshelves["Claudia"].addCollection("Wheel of Time - serie");
+userBookshelves["Claudia"].addBookToCollection("Wheel of Time - serie","1-7");
+userBookshelves["Claudia"].addBookToCollection("Wheel of Time - serie","1-6");
+userBookshelves["Claudia"].addBookToCollection("Wheel of Time - serie","1-5");
+
+userBookshelves["Claudia"].addCollection("Letture estate 2024");
+userBookshelves["Claudia"].addBookToCollection("Letture estate 2024","1-3");
+userBookshelves["Claudia"].addBookToCollection("Letture estate 2024","1-4");
+userBookshelves["Claudia"].addBookToCollection("Letture estate 2024","1-9");
 
 userBookshelves["Antonio"] = new Bookshelf("Antonio");
 userBookshelves["Antonio"].addOwnedBook("1-13");
@@ -425,7 +439,6 @@ userBookshelves["Paola"].borrowBook("1-9", "5/10/24", "Claudia");
 function getBookshelfByOwner(owner) {
     return userBookshelves[owner];
 }
-//console.log(userBookshelves["Claudia"].getBooksOnShelf());
 
 
 
