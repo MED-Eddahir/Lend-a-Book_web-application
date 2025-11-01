@@ -1,0 +1,23 @@
+{
+  "name": "lend-a-book_web-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MED-Eddahir/Lend-a-Book_web-application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MED-Eddahir/Lend-a-Book_web-application/issues"
+  },
+  "homepage": "https://github.com/MED-Eddahir/Lend-a-Book_web-application#readme",
+  "keywords": [],
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}
